@@ -11,13 +11,11 @@ create table PaymentDetails(
                     TransactionID       NUMBER 
 );
 
-/*
 CREATE SEQUENCE pay_id
 MINVALUE 1
 START WITH 12350012
 INCREMENT BY 1
 CACHE 10;
-*/
 
 ACCEPT courseid PROMPT 'Enter courseid : '
 ACCEPT I PROMPT 'Enter your userid:'
@@ -40,13 +38,11 @@ BEGIN
     CardNumber :=&N;
     CVV_Number :=&cvv;
     id:='&courseid';
-    SELECT fees INTO amount 
-    FROM course
-    WHERE courseid = id;
-    SELECT coursename INTO name 
-    FROM course
-    WHERE courseid = id;
+    
+    SELECT fees INTO amount FROM course WHERE courseid = id;
+    SELECT coursename INTO name FROM course WHERE courseid = id;
     SELECT TotalEnrolled INTO seat FROM course  WHERE courseid = id;
+    
     DECLARE
     card_isvalid   BOOLEAN;
     BEGIN
