@@ -1,8 +1,7 @@
---set verify off
 set serveroutput on
 
 ---------------------------------------------------------------------
---PART-2: Login
+-- Login
 ---------------------------------------------------------------------
 
 ACCEPT userid PROMPT 'Enter your UserID: '
@@ -44,4 +43,3 @@ begin
     DBMS_OUTPUT.put_line('Yor are not Registered');
   end if;
 end;
-
