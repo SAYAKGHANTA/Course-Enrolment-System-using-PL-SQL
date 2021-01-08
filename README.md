@@ -1,2 +1,6 @@
 # Course-Enrolment-System-using-PL-SQL
-Developing a course enrolment system using pl/sql. First user will register themselves then they will login to the server after login user can see the details of available courses like start date, end date, subject tutors , fees etc, if the user like the course and did not enroll any previous course then they can enroll it.
+Create an online Course Enrollment System having following criteria.
+• User has to register themselves for viewing the courses available. Both registration and login facilities should be provided.
+• User has the option to enroll one course
+• Each course has a max intake capacity of 40. Once 41th candidate tries to enroll for a particular course, it will show ‘course is full’.
+• If the course is available the user can go for the payment option to complete the enrollment process.
