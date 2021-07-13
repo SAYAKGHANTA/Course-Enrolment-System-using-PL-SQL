@@ -43,7 +43,7 @@ CREATE TABLE Student(
             FOREIGN KEY (courseid)
             REFERENCES course(courseid)  --courseid is foreign key
             );
---sequence to create unique transactionid
+--sequence to create unique studentid
 CREATE SEQUENCE seq_id
 MINVALUE 1
 START WITH 15045
